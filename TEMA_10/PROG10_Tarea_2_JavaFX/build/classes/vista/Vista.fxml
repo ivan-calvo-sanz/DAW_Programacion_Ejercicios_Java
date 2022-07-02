@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="487.0" prefWidth="1070.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.VistaController">
+   <children>
+      <Button fx:id="btnAgregar" layoutX="30.0" layoutY="439.0" mnemonicParsing="false" onAction="#agregarVehiculo" prefHeight="25.0" prefWidth="149.0" text="Agregar nuevo Vehiculo" />
+      <Label layoutX="30.0" layoutY="31.0" text="Marca" />
+      <Label layoutX="30.0" layoutY="80.0" text="Matrícula" />
+      <TextField fx:id="txtMarca" layoutX="30.0" layoutY="48.0" />
+      <TextField fx:id="txtMatricula" layoutX="30.0" layoutY="97.0" />
+      <TextField fx:id="txtNumKm" layoutX="30.0" layoutY="147.0" />
+      <Label layoutX="30.0" layoutY="130.0" text="Número de km" />
+      <TableView fx:id="tblVehiculos" layoutX="210.0" layoutY="41.0" onMouseClicked="#seleccionar" prefHeight="327.0" prefWidth="842.0">
+        <columns>
+          <TableColumn fx:id="colMarca" prefWidth="76.0" text="Marca" />
+          <TableColumn fx:id="colMatricula" prefWidth="91.0" text="Matricula" />
+            <TableColumn fx:id="colNumKm" prefWidth="60.0" text="Num km" />
+            <TableColumn fx:id="colFechaMatriculacion" prefWidth="137.0" text="Fecha Matriculación" />
+            <TableColumn fx:id="colPrecio" text="Precio" />
+            <TableColumn fx:id="colPropietario" prefWidth="83.0" text="Propietario" />
+            <TableColumn fx:id="colDNI" prefWidth="70.0" text="DNI" />
+            <TableColumn fx:id="colDescripcion" prefWidth="244.0" text="Descripcion" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnModificar" layoutX="212.0" layoutY="439.0" mnemonicParsing="false" onAction="#modificarVehiculo" prefHeight="25.0" prefWidth="149.0" text="Modificar" />
+      <Button fx:id="btnEliminar" layoutX="380.0" layoutY="439.0" mnemonicParsing="false" onAction="#eliminarVehiculo" prefHeight="25.0" prefWidth="149.0" text="Eliminar" />
+      <Label layoutX="30.0" layoutY="180.0" text="Fecha de matriculación" />
+      <TextField fx:id="txtFechaMatriculacionDia" layoutX="30.0" layoutY="197.0" prefHeight="25.0" prefWidth="39.0" promptText="dd" />
+      <TextField fx:id="txtPrecio" layoutX="30.0" layoutY="243.0" />
+      <Label layoutX="30.0" layoutY="226.0" text="Precio" />
+      <Label layoutX="30.0" layoutY="275.0" text="Propietario" />
+      <TextField fx:id="txtPropietario" layoutX="30.0" layoutY="292.0" />
+      <TextField fx:id="txtDNI" layoutX="30.0" layoutY="342.0" />
+      <Label layoutX="30.0" layoutY="325.0" text="DNI" />
+      <TextField fx:id="txtFechaMatriculacionAño" layoutX="126.0" layoutY="197.0" prefHeight="25.0" prefWidth="50.0" promptText="aaaa" />
+      <TextField fx:id="txtFechaMatriculacionMes" layoutX="77.0" layoutY="197.0" prefHeight="25.0" prefWidth="39.0" promptText="mm" />
+      <Label layoutX="30.0" layoutY="376.0" text="Descripcion" />
+      <TextField fx:id="txtDescripcion" layoutX="30.0" layoutY="393.0" prefHeight="25.0" prefWidth="331.0" />
+   </children>
+</AnchorPane>

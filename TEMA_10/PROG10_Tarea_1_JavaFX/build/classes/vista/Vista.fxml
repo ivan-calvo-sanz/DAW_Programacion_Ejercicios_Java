@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="343.0" prefWidth="273.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.VistaController">
+   <children>
+      <TextField fx:id="txtResultado" alignment="CENTER_RIGHT" editable="false" layoutX="20.0" layoutY="23.0" prefHeight="40.0" prefWidth="234.0" />
+      <Button fx:id="btnC" layoutX="20.0" layoutY="77.0" mnemonicParsing="false" onAction="#borrar" prefHeight="40.0" prefWidth="51.0" text="C" />
+      <Button fx:id="btnDividir" layoutX="83.0" layoutY="77.0" mnemonicParsing="false" onAction="#dividir" prefHeight="40.0" prefWidth="51.0" text="/" />
+      <Button fx:id="btnMultiplicar" layoutX="143.0" layoutY="77.0" mnemonicParsing="false" onAction="#multiplicar" prefHeight="40.0" prefWidth="51.0" text="X" />
+      <Button fx:id="btnRestar" layoutX="203.0" layoutY="77.0" mnemonicParsing="false" onAction="#restar" prefHeight="40.0" prefWidth="51.0" text="-" />
+      <Button fx:id="btn9" layoutX="143.0" layoutY="127.0" mnemonicParsing="false" onAction="#mostrar9" prefHeight="40.0" prefWidth="51.0" text="9" />
+      <Button fx:id="btn8" layoutX="83.0" layoutY="127.0" mnemonicParsing="false" onAction="#mostrar8" prefHeight="40.0" prefWidth="51.0" text="8" />
+      <Button fx:id="btn7" layoutX="20.0" layoutY="127.0" mnemonicParsing="false" onAction="#mostrar7" prefHeight="40.0" prefWidth="51.0" text="7" />
+      <Button fx:id="btn4" layoutX="20.0" layoutY="179.0" mnemonicParsing="false" onAction="#mostrar4" prefHeight="40.0" prefWidth="51.0" text="4" />
+      <Button fx:id="btn5" layoutX="83.0" layoutY="179.0" mnemonicParsing="false" onAction="#mostrar5" prefHeight="40.0" prefWidth="51.0" text="5" />
+      <Button fx:id="btn6" layoutX="143.0" layoutY="179.0" mnemonicParsing="false" onAction="#mostrar6" prefHeight="40.0" prefWidth="51.0" text="6" />
+      <Button fx:id="btnSumar" layoutX="203.0" layoutY="128.0" mnemonicParsing="false" onAction="#sumar" prefHeight="91.0" prefWidth="51.0" text="+" />
+      <Button fx:id="btn3" layoutX="143.0" layoutY="230.0" mnemonicParsing="false" onAction="#mostrar3" prefHeight="40.0" prefWidth="51.0" text="3" />
+      <Button fx:id="btn2" layoutX="83.0" layoutY="230.0" mnemonicParsing="false" onAction="#mostrar2" prefHeight="40.0" prefWidth="51.0" text="2" />
+      <Button fx:id="btn1" layoutX="20.0" layoutY="230.0" mnemonicParsing="false" onAction="#mostrar1" prefHeight="40.0" prefWidth="51.0" text="1" />
+      <Button fx:id="btnMasMenos" layoutX="20.0" layoutY="279.0" mnemonicParsing="false" onAction="#mostrarMasMenos" prefHeight="40.0" prefWidth="51.0" text="+/-" />
+      <Button fx:id="btn0" layoutX="83.0" layoutY="279.0" mnemonicParsing="false" onAction="#mostrar0" prefHeight="40.0" prefWidth="51.0" text="0" />
+      <Button fx:id="btnComa" layoutX="143.0" layoutY="279.0" mnemonicParsing="false" onAction="#mostrarComa" prefHeight="40.0" prefWidth="51.0" text="." />
+      <Button fx:id="btnResultado" layoutX="203.0" layoutY="229.0" mnemonicParsing="false" onAction="#resultado" prefHeight="91.0" prefWidth="51.0" text="=" />
+   </children>
+</AnchorPane>
